@@ -1,0 +1,31 @@
+@import"./variables.scss";
+@import "./extends.scss";
+
+img {
+  display: block;
+}
+
+body {
+  font-family: $main;
+/*   color: $main-text-color-b;
+  font-size: $normal; */
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+:link,
+:visited {
+  color: inherit;
+}
+
+header,
+section {
+  margin: 0 auto;
+}
+
+span {
+  font-weight: bold;
+}
