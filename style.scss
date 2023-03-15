@@ -29,3 +29,19 @@ section {
 span {
   font-weight: bold;
 }
+
+.navbar-nav{
+  margin-left: 100px;
+}
+.carousel_title{
+  font-family: $main;;
+  font-size: $fs-big;
+  font-weight: $fw-bold;
+  text-align: center;
+  margin-top: 100px;
+}
+.carousel {
+  max-width: 1100px;
+  margin: 0 auto; 
+}
+

@@ -1,1 +1,45 @@
-/*# sourceMappingURL=style.css.map */
+img {
+  display: block;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  /*   color: $main-text-color-b;
+    font-size: $normal; */
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+:link,
+:visited {
+  color: inherit;
+}
+
+header,
+section {
+  margin: 0 auto;
+}
+
+span {
+  font-weight: bold;
+}
+
+.navbar-nav {
+  margin-left: 100px;
+}
+
+.carousel_title {
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.carousel {
+  max-width: 1100px;
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */
