@@ -5,7 +5,7 @@ img {
 body {
   font-family: "Roboto", sans-serif;
   /*   color: $main-text-color-b;
-    font-size: $normal; */
+  font-size: $normal; */
   font-weight: 400;
 }
 
@@ -42,4 +42,105 @@ span {
 .carousel {
   max-width: 1100px;
   margin: 0 auto;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-color: black;
+}
+
+/* RADIO BTNs  SIZE L SIZE XL SIZE XXL */
+.radio__btns {
+  text-align: center;
+}
+
+.radio__btns-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+.radio__btns-wrapper input[type=radio] {
+  display: none;
+}
+
+.radio__btns-wrapper label {
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #f2f2f2;
+  color: #333;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.radio__btns-wrapper input[type=radio]:checked + label {
+  background-color: #333;
+  color: #fff;
+}
+
+.radio__btns-wrapper label:hover {
+  background-color: #ddd;
+}
+
+.radio__btns-wrapper input[type=radio] + label::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: #fff;
+  border: 2px solid #333;
+  vertical-align: middle;
+}
+
+.radio__btns-wrapper input[type=radio]:checked + label::before {
+  background-color: #333;
+}
+
+.radio__btns-wrapper input[type=radio] {
+  display: none;
+}
+
+.price {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 50px;
+}
+
+/* ---------------constructor------------- */
+.constructor {
+  display: flex;
+  align-items: center;
+}
+
+.pizza__base {
+  width: 50%;
+  padding: 5%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.ingradients {
+  width: 50%;
+  padding: 5%;
+  box-sizing: border-box;
+  box-shadow: 0 0 5px 10px rgba(102, 52, 149, 0.55);
+}
+
+.ingradients__list {
+  -moz-column-count: 3;
+       column-count: 3;
+}
+
+.ingradients__list-item img {
+  max-width: 100%;
+  max-height: 200px;
 }/*# sourceMappingURL=style.css.map */
