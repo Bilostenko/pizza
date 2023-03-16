@@ -7,8 +7,6 @@ img {
 
 body {
   font-family: $main;
-  /*   color: $main-text-color-b;
-  font-size: $normal; */
   font-weight: 400;
 }
 
@@ -36,7 +34,6 @@ span {
 
 .carousel_title {
   font-family: $main;
-  ;
   font-size: $fs-big;
   font-weight: $fw-bold;
   text-align: center;
@@ -51,12 +48,12 @@ span {
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
   background-color: black;
-
 }
 
 /* RADIO BTNs  SIZE L SIZE XL SIZE XXL */
-.radio__btns{
+.radio__btns {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .radio__btns-wrapper {
@@ -67,55 +64,51 @@ span {
   list-style: none;
   padding: 0;
   margin-top: 2rem;
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+    color: #333;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #ddd;
+    }
+  }
+
+  input[type="radio"]:checked+label {
+    background-color: #333;
+    color: #fff;
+  }
+
+  label::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #fff;
+    border: 2px solid #333;
+    vertical-align: middle;
+  }
+
+  input[type="radio"]:checked+label::before {
+    background-color: #333;
+  }
 }
 
-.radio__btns-wrapper input[type="radio"] {
-  display: none;
-}
-
-.radio__btns-wrapper label {
-  display: inline-block;
-  cursor: pointer;
-  padding: 10px 20px;
-  background-color: #f2f2f2;
-  color: #333;
-  border-radius: 20px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  transition: all 0.3s ease-in-out;
-}
-
-.radio__btns-wrapper input[type="radio"]:checked+label {
-  background-color: #333;
-  color: #fff;
-}
-
-.radio__btns-wrapper label:hover {
-  background-color: #ddd;
-}
-
-.radio__btns-wrapper input[type="radio"]+label::before {
-  content: "";
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  margin-right: 10px;
-  background-color: #fff;
-  border: 2px solid #333;
-  vertical-align: middle;
-}
-
-.radio__btns-wrapper input[type="radio"]:checked+label::before {
-  background-color: #333;
-}
-
-.radio__btns-wrapper input[type="radio"] {
-  display: none;
-}
-
-.price{
-text-align: center;
+.price {
+  text-align: center;
   margin-top: 2rem;
   font-size: $fs-big;
 }
@@ -137,13 +130,109 @@ text-align: center;
   width: 50%;
   padding: 5%;
   box-sizing: border-box;
-  box-shadow: 0 0 5px 10px rgb(102, 52, 149, 55%);
+  box-shadow: 0 0 5px 10px rgba(102, 52, 149, 0.55);
 }
 
 .ingradients__list {
   column-count: 3;
 }
+
 .ingradients__list-item img {
   max-width: 100%;
   max-height: 200px;
+}
+
+/* --------ORDER----------- */
+.order {
+  background-color: $order-bg;
+  padding: $order-padding;
+  height: 100%;
+
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .name,
+    .phone,
+    .email {
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"] {
+      border: $input-border-width solid $input-border-color;
+      border-radius: $input-border-radius;
+      padding: $input-padding;
+      outline: none;
+      transition: border-color 0.3s ease;
+      text-align: center;
+
+      &:focus {
+        border-color: $input-active-border-color;
+        box-shadow: $input-active-box-shadow;
+      }
+    }
+  }
+
+  order  .btn {
+    background-color: #7EB9FF;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    transition: background-color 0.3s ease;
+
+    &:hover,
+    &:focus {
+      background-color: #5298f7;
+      outline: none;
+    }
+  }
+}
+
+/* --------BANNER-------- */
+.discount-banner {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 20px;
+  transition: all 0.5s ease;
+
+  &:hover {
+    position: absolute;
+    bottom: calc(100% - 50vh);
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+
+  &__content {
+    text-align: center;
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
 }
