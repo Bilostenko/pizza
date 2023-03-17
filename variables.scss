@@ -1,6 +1,15 @@
 $main: 'Roboto', sans-serif;
-$fs-big: 50px;
+$fs-big: 1.5rem;
 $fs-normal: 20px;
 $fs-small: 15px;
-
 $fw-bold: 700;
+
+/* order */
+$order-bg: #F8F9FA;
+$order-padding: 20px;
+$input-padding: 8px;
+$input-border-width: 1px;
+$input-border-radius: 4px;
+$input-border-color: #ccc;
+$input-active-border-color: #7EB9FF;
+$input-active-box-shadow: 0 0 8px 0 #7EB9FF;

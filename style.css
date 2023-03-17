@@ -1,11 +1,10 @@
+/* order */
 img {
   display: block;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  /*   color: $main-text-color-b;
-  font-size: $normal; */
   font-weight: 400;
 }
 
@@ -33,7 +32,7 @@ span {
 
 .carousel_title {
   font-family: "Roboto", sans-serif;
-  font-size: 50px;
+  font-size: 1.5rem;
   font-weight: 700;
   text-align: center;
   margin-top: 100px;
@@ -52,6 +51,7 @@ span {
 /* RADIO BTNs  SIZE L SIZE XL SIZE XXL */
 .radio__btns {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .radio__btns-wrapper {
@@ -63,11 +63,9 @@ span {
   padding: 0;
   margin-top: 2rem;
 }
-
 .radio__btns-wrapper input[type=radio] {
   display: none;
 }
-
 .radio__btns-wrapper label {
   display: inline-block;
   cursor: pointer;
@@ -79,17 +77,14 @@ span {
   margin-right: 10px;
   transition: all 0.3s ease-in-out;
 }
-
+.radio__btns-wrapper label:hover {
+  background-color: #ddd;
+}
 .radio__btns-wrapper input[type=radio]:checked + label {
   background-color: #333;
   color: #fff;
 }
-
-.radio__btns-wrapper label:hover {
-  background-color: #ddd;
-}
-
-.radio__btns-wrapper input[type=radio] + label::before {
+.radio__btns-wrapper label::before {
   content: "";
   display: inline-block;
   width: 20px;
@@ -100,19 +95,14 @@ span {
   border: 2px solid #333;
   vertical-align: middle;
 }
-
 .radio__btns-wrapper input[type=radio]:checked + label::before {
   background-color: #333;
-}
-
-.radio__btns-wrapper input[type=radio] {
-  display: none;
 }
 
 .price {
   text-align: center;
   margin-top: 2rem;
-  font-size: 50px;
+  font-size: 1.5rem;
 }
 
 /* ---------------constructor------------- */
@@ -143,4 +133,88 @@ span {
 .ingradients__list-item img {
   max-width: 100%;
   max-height: 200px;
+}
+
+/* --------ORDER----------- */
+.order {
+  background-color: #F8F9FA;
+  padding: 20px;
+  height: 100%;
+}
+.order__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.order__form .name,
+.order__form .phone,
+.order__form .email {
+  margin-bottom: 10px;
+}
+.order__form input[type=text],
+.order__form input[type=tel],
+.order__form input[type=email] {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  text-align: center;
+}
+.order__form input[type=text]:focus,
+.order__form input[type=tel]:focus,
+.order__form input[type=email]:focus {
+  border-color: #7EB9FF;
+  box-shadow: 0 0 8px 0 #7EB9FF;
+}
+.order order .btn {
+  background-color: #7EB9FF;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 24px;
+  transition: background-color 0.3s ease;
+}
+.order order .btn:hover, .order order .btn:focus {
+  background-color: #5298f7;
+  outline: none;
+}
+
+/* --------BANNER-------- */
+.discount-banner {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 20px;
+  transition: all 0.5s ease;
+}
+.discount-banner:hover {
+  position: absolute;
+  bottom: calc(100% - 50vh);
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+.discount-banner__content {
+  text-align: center;
+}
+.discount-banner__content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.discount-banner__content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.discount-banner__btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
