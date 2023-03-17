@@ -131,23 +131,34 @@ span {
   padding: 5%;
   box-sizing: border-box;
   box-shadow: 0 0 5px 10px rgba(102, 52, 149, 0.55);
+  max-height: 400px;
 }
 
 .ingradients__list {
-  column-count: 3;
+  column-count: 5;
+}
+
+.ingradients__list-item {
+  display: flex;
+  align-items: center;
+/*   margin-bottom: 10px; */
 }
 
 .ingradients__list-item img {
-  max-width: 100%;
-  max-height: 200px;
+  max-width: 100px;
+  max-height: 100px;
+  margin-right: 10px;
 }
+
+.ingradients__list-item span {
+  font-size: 24px;
+}
+
 
 /* --------ORDER----------- */
 .order {
   background-color: $order-bg;
   padding: $order-padding;
-  height: 100%;
-
 
   &__form {
     display: flex;
