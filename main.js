@@ -9,6 +9,7 @@ const pepperoni = document.querySelector('#pepperoni');
 const pepper = document.querySelector('#pepper');
 const pineapple = document.querySelector('#pineapple');
 
+
 const dropZone = document.querySelector('.pizza__base');
 dropZone.ondragover = allowDrop;
 function allowDrop(event) {
