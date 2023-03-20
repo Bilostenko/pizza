@@ -67,47 +67,56 @@ body {
 
 .layer:nth-child(1) {
   background-image: url("../img/ingredients/Chicken group.png");
-  background-size: 80% 85%;
+  background-size: 95% 85%;
+  background-repeat: no-repeat;
 }
 
 .layer:nth-child(2) {
   background-image: url("../img/ingredients/Pepperoni group.png");
-  background-size: 100% 100%;
+  background-size: 81% 76%;
+  background-repeat: no-repeat;
 }
 
 .layer:nth-child(3) {
   background-image: url("../img/ingredients/Pepper group.png");
-  background-size: 100% 100%;
+  background-size: 53% 53%;
+  background-repeat: no-repeat;
 }
 
 .layer:nth-child(4) {
   background-image: url("../img/ingredients/Pineapple group.png");
-  background-size: 100% 100%;
+  background-size: 54% 46%;
+  background-repeat: no-repeat;
 }
 
 .layer:nth-child(5) {
   background-image: url("../img/ingredients/Corn group.png");
-  background-size: 100% 100%;
+  background-size: 99% 93%;
+  background-repeat: no-repeat;
 }
 
 .layer:nth-child(6) {
   background-image: url("../img/ingredients/Cheese group.png");
-  background-size: 100% 100%;
+  background-size: 73% 62%;
+  background-repeat: no-repeat;
 }
 
 .layer:nth-child(7) {
   background-image: url("../img/ingredients/Mustard group.png");
-  background-size: 100% 100%;
+  background-size: 117% 51%;
+  background-repeat: no-repeat;
 }
 
 .layer:nth-child(8) {
   background-image: url("../img/ingredients/Ketchup group.png");
-  background-size: 100% 100%;
+  background-size: 88% 40%;
+  background-repeat: no-repeat;
 }
 
 .layer:nth-child(9) {
   background-image: url("../img/ingredients/Mayonnaise group.png");
-  background-size: 100% 100%;
+  background-size: 42% 138%;
+  background-repeat: no-repeat;
 }
 
 .total {
