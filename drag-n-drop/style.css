@@ -1,0 +1,12 @@
+.drop-zone {
+  background-color: aqua;
+  width: 500px;
+  height: 500px;
+}
+
+.dragon {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
+}
