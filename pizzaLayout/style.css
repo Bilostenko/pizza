@@ -1,57 +1,9 @@
-/* order */
-img {
-  display: block;
-}
-
 body {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
 }
 
-a {
-  text-decoration: none;
-}
-
-:link,
-:visited {
-  color: inherit;
-}
-
-header,
-section {
-  margin: 0 auto;
-}
-
-span {
-  font-weight: bold;
-}
-
-.navbar-nav {
-  margin-left: 100px;
-}
-
-.carousel_title {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  text-align: center;
-  margin-top: 100px;
-}
-
-.carousel {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
-  background-color: black;
-}
-
-/* ---------------constructor------------- */
 .size-controls {
   background-color: lightblue;
   height: 10vh;
@@ -87,12 +39,12 @@ span {
   background-size: 100% 100%;
 }
 
-:has([value=middle]:checked) ~ .preview > .pizza {
+:has([value="middle"]:checked)~.preview>.pizza {
   height: 75%;
   width: 75%;
 }
 
-:has([value=small]:checked) ~ .preview > .pizza {
+:has([value="small"]:checked)~.preview>.pizza {
   height: 60%;
   width: 60%;
 }
@@ -164,40 +116,3 @@ span {
   width: 100%;
   order: 4;
 }
-
-/* --------BANNER-------- */
-.discount-banner {
-  position: relative;
-  width: 300px;
-  height: 200px;
-  background-color: #f8f8f8;
-  border: 1px solid #ddd;
-  padding: 20px;
-  transition: all 0.5s ease;
-}
-.discount-banner:hover {
-  position: absolute;
-  bottom: calc(100% - 50vh);
-  left: 50%;
-  transform: translate(-50%, 50%);
-}
-.discount-banner__content {
-  text-align: center;
-}
-.discount-banner__content h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-.discount-banner__content p {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-.discount-banner__btn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
-}/*# sourceMappingURL=style.css.map */
