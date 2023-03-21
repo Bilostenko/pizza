@@ -87,54 +87,54 @@
 
   <!-------------------------- pizza constructor -------------------->
   <div class="size-controls">
-    <input type="radio" name="size" value="large" checked>
-    <input type="radio" name="size" value="middle">
-    <input type="radio" name="size" value="small">
+    <input type="radio" name="size" value="large" checked>Large 10$
+    <input type="radio" name="size" value="middle">Middle 8$
+    <input type="radio" name="size" value="small">Small 6$
   </div>
 
   <div class="ingredient-controls">
     <ul class="ingredient__list">
-      <li class="ingredient"> <!-- таск -->
+      <li class="ingredient drag-item" draggable="true"> 
+        <label id="mem">
+          <input type="checkbox" hidden >
+        </label>
+      </li>
+      <li class="ingredient drag-item" draggable = 'true'>
         <label>
           <input type="checkbox" hidden>
         </label>
       </li>
-      <li class="ingredient">
+      <li class="ingredient drag-item" draggable = 'true'>
         <label>
           <input type="checkbox" hidden>
         </label>
       </li>
-      <li class="ingredient">
+      <li class="ingredient drag-item" draggable = 'true'>
         <label>
           <input type="checkbox" hidden>
         </label>
       </li>
-      <li class="ingredient">
+      <li class="ingredient drag-item" draggable = 'true'>
         <label>
           <input type="checkbox" hidden>
         </label>
       </li>
-      <li class="ingredient">
+      <li class="ingredient drag-item" draggable = 'true'>
         <label>
           <input type="checkbox" hidden>
         </label>
       </li>
-      <li class="ingredient">
+      <li class="ingredient drag-item" draggable = 'true'>
         <label>
           <input type="checkbox" hidden>
         </label>
       </li>
-      <li class="ingredient">
+      <li class="ingredient drag-item" draggable = 'true'>
         <label>
           <input type="checkbox" hidden>
         </label>
       </li>
-      <li class="ingredient">
-        <label>
-          <input type="checkbox" hidden>
-        </label>
-      </li>
-      <li class="ingredient">
+      <li class="ingredient drag-item" draggable = 'true'>
         <label>
           <input type="checkbox" hidden>
         </label>
@@ -143,7 +143,7 @@
   </div>
 
   <div class="preview">
-    <div class="pizza"> <!-- дропзона -->
+    <div class="pizza drop-container"> <!-- дропзона -->
       <ul class="layers">
         <li class="layer"></li>
         <li class="layer"></li>
