@@ -58,15 +58,6 @@ span {
 }
 
 /* ---------------constructor------------- */
-/* .size-controls {
-  background-color: lightblue;
-  display: flex;
-  height: 10vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 .size-controls {
   background-color: lightblue;
   display: flex;
@@ -81,16 +72,15 @@ span {
   color: #333;
   cursor: pointer;
   margin-right: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 20px;
 }
 .size-controls label:last-child {
   margin-right: 0;
 }
 .size-controls input[type=radio] {
-  display: none;
-}
-.size-controls input[type=radio]:checked + label {
-  font-weight: bold;
-  color: #c0392b;
+  margin-right: 20px;
 }
 .size-controls .total__price {
   font-size: 24px;
@@ -192,12 +182,12 @@ span {
   background-size: 100% 100%;
 }
 
-:has([value=middle]:checked) ~ .preview > .pizza {
+:has([value="8"]:checked) ~ .preview > .pizza {
   height: 75%;
   width: 75%;
 }
 
-:has([value=small]:checked) ~ .preview > .pizza {
+:has([value="6"]:checked) ~ .preview > .pizza {
   height: 60%;
   width: 60%;
 }

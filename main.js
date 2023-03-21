@@ -1,50 +1,4 @@
-// const dragItems = document.querySelectorAll(".drag-item");
-// const dropContainer = document.querySelector(".drop-container");
-// const hiddenInput = document.querySelectorAll('.ingredient');
-// const layer = document.querySelector('.layer');
-// /* layer.style.display = 'block'; */
-
-// // Обработчик события dragstart для элементов, которые можно перетаскивать
-// function dragStartHandler(e) {
-//   e.dataTransfer.setData("text/plain", e.target.id);
-//   e.currentTarget.classList.add("dragging");
-// }
-
-// // Обработчик события dragend для элементов, которые можно перетаскивать
-// function dragEndHandler(e) {
-//   e.currentTarget.classList.remove("dragging");
-// }
-
-// // Обработчик события dragover для контейнера, в который можно бросать элементы
-// function dragOverHandler(e) {
-//   e.preventDefault();
-// }
-
-// // Обработчик события drop для контейнера, в который можно бросать элементы
-// function dropHandler(e) { 
-//   e.preventDefault();
-//   const data = e.dataTransfer.getData("text/plain");
-//   const draggedItem = document.getElementById(data);
-
-//   // Добавляем стиль display:block ко всем элементам li с классом drag-item
-//   const dragItems = document.querySelectorAll('.drag-item');
-//   dragItems.forEach(item => {
-//     item.style.display = 'block';
-//   });
-
-//   e.currentTarget.appendChild(draggedItem);
-// }
-
-// // Добавляем обработчики событий для всех элементов, которые можно перетаскивать
-// dragItems.forEach((item) => {
-//   item.addEventListener("dragstart", dragStartHandler);
-//   item.addEventListener("dragend", dragEndHandler);
-// });
-
-// // Добавляем обработчики событий для контейнера, в который можно бросать элементы
-// dropContainer.addEventListener("dragover", dragOverHandler);
-// dropContainer.addEventListener("drop", dropHandler);
-
+/* drag and drop */
 const dragItems = document.querySelectorAll('.drag-item');
 const dropContainer = document.querySelector('.drop-container');
 
@@ -90,3 +44,21 @@ function drop() {
   input.checked = true;
   this.classList.remove('hovered');
 }
+
+// price calculation
+const totalPrice = document.querySelector('.total__price');
+
+const sizeControls = document.querySelector('.size-controls');
+const inputs = sizeControls.querySelectorAll('input');
+
+inputs.forEach(input => {
+  input.addEventListener('change', () => {
+    const checkedInput = sizeControls.querySelector('input:checked');
+
+    if (checkedInput) {
+      console.log('id: ' + checkedInput.id);
+
+      // здесь вы можете выполнить нужные действия с выбранным размером
+    }
+  });
+});
