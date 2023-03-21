@@ -58,13 +58,45 @@ span {
 }
 
 /* ---------------constructor------------- */
-.size-controls {
+/* .size-controls {
   background-color: lightblue;
+  display: flex;
   height: 10vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+} */
+.size-controls {
+  background-color: lightblue;
+  display: flex;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.size-controls label {
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.size-controls label:last-child {
+  margin-right: 0;
+}
+.size-controls input[type=radio] {
+  display: none;
+}
+.size-controls input[type=radio]:checked + label {
+  font-weight: bold;
+  color: #c0392b;
+}
+.size-controls .total__price {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 20px;
+  color: #27ae60;
 }
 
 .ingredient-controls {

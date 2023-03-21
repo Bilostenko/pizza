@@ -87,10 +87,15 @@
 
   <!-------------------------- pizza constructor -------------------->
   <div class="size-controls">
-    <input type="radio" name="size" value="large" checked>Large 10$
-    <input type="radio" name="size" value="middle">Middle 8$
-    <input type="radio" name="size" value="small">Small 6$
+    <label for="large">Large 10$</label>
+    <input type="radio" id="large" name="size" value="large" checked>
+    <label for="middle">Middle 8$</label>
+    <input type="radio" id="middle" name="size" value="middle">
+    <label for="small">Small 6$</label>
+    <input type="radio" id="small" name="size" value="small">
+    <div class="total__price">00</div>
   </div>
+  
 
   <div class="ingredient-controls">
     <ul class="ingredient__list">
@@ -158,8 +163,7 @@
     </div>
   </div>
 
-  <div class="total"></div>
-  <!-------------------------- order -------------------->
+   <!-------------------------- order -------------------->
 
   <!--   <section class="order">
     <div class="order__form">
