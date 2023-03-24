@@ -51,14 +51,17 @@ const totalPrice = document.querySelector('.total__price');
 const sizeControls = document.querySelector('.size-controls');
 const inputs = sizeControls.querySelectorAll('input');
 
+/* корж */
 inputs.forEach(input => {
   input.addEventListener('change', () => {
     const checkedInput = sizeControls.querySelector('input:checked');
 
     if (checkedInput) {
-      console.log('id: ' + checkedInput.id);
-
-      // здесь вы можете выполнить нужные действия с выбранным размером
+      totalPrice.innerHTML = "Total price: " + checkedInput.value + "$";
     }
   });
 });
+
+/* ingradients */
+const ingredients = document.querySelector('.ingredient__list');
+const checkedIngerdients = ingredients.querySelectorAll('input:checked');
