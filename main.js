@@ -43,6 +43,7 @@ function drop() {
   const input = draggedItem.querySelector('input[type="checkbox"]');
   input.checked = true;
   this.classList.remove('hovered');
+  updateTotalPrice();
 }
 
 // price calculation
@@ -57,11 +58,35 @@ inputs.forEach(input => {
     const checkedInput = sizeControls.querySelector('input:checked');
 
     if (checkedInput) {
-      totalPrice.innerHTML = "Total price: " + checkedInput.value + "$";
+      updateTotalPrice();
     }
   });
 });
 
 /* ingradients */
-const ingredients = document.querySelector('.ingredient__list');
-const checkedIngerdients = ingredients.querySelectorAll('input:checked');
+const ingredientInputs = document.querySelectorAll('.ingredient-input');
+
+ingredientInputs.forEach(input => {
+  input.addEventListener('change', () => {
+    updateTotalPrice();
+  });
+});
+
+function updateTotalPrice() {
+  let totalPriceValue = 0;
+
+  /* Calculation of the cost of selected ingredients */
+  ingredientInputs.forEach(input => {
+    if (input.checked) {
+      totalPriceValue += parseFloat(input.value);
+    }
+  });
+
+  /* Adding the cost of the selected size */
+  const checkedInput = sizeControls.querySelector('input:checked');
+  if (checkedInput) {
+    totalPriceValue += parseFloat(checkedInput.value);
+  }
+
+  totalPrice.innerHTML = "Total price: " + totalPriceValue + "$";
+}
