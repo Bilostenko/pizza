@@ -48,7 +48,6 @@ function drop() {
 
 // price calculation
 const totalPrice = document.querySelector('.total__price');
-
 const sizeControls = document.querySelector('.size-controls');
 const inputs = sizeControls.querySelectorAll('input');
 
