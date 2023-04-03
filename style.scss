@@ -62,7 +62,7 @@ span {
 /* ---------------constructor------------- */
 
 .size-controls {
-  background-color: lightblue;
+  // background-color: lightblue;
   display: flex;
   height: 10vh;
   width: 100%;
@@ -98,10 +98,14 @@ span {
 }
 
 .ingredient-controls {
-  background-color: lightcoral;
-  height: 60vmin;
+  // background-color: lightcoral;
+  height: 70vmin;
   width: calc(100% - 60vmin);
   order: 3;
+  border: 2px solid #d4af37;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
 /* ingredient */
@@ -193,7 +197,7 @@ span {
 }
 
 .preview {
-  background-color: lightgreen;
+  // background-color: lightgreen;
   height: 60vmin;
   width: 60vmin;
   order: 2;
@@ -203,7 +207,7 @@ span {
 }
 
 .pizza {
-  background-color: lightyellow;
+  // background-color: lightyellow;
   height: 90%;
   width: 90%;
   transition: 100ms;
