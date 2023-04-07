@@ -197,7 +197,6 @@ span {
 }
 
 .preview {
-  // background-color: lightgreen;
   height: 60vmin;
   width: 60vmin;
   order: 2;
@@ -207,11 +206,10 @@ span {
 }
 
 .pizza {
-  // background-color: lightyellow;
   height: 90%;
   width: 90%;
   transition: 100ms;
-  background-image: url("../img/ingredients/Pizza.png");
+  background-image: url("./img/ingredients/Pizza.png");
   background-size: 100% 100%;
 }
 
